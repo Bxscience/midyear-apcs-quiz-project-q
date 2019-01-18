@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+    <!--big white text box-->
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/qMargin"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/qPaddingLR"
+        android:paddingTop="@dimen/qPaddingT"
+        android:paddingRight="@dimen/qPaddingLR"
+        android:paddingBottom="@dimen/qPaddingT"
+        android:text="JJJT Quiz App"
+        android:textColor="@color/green"
+        android:textSize="30dp" />
+
+    <!--answers and retry buttons-->
+
+    <!-- 0 arithmetic -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/classes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Class, Interface, Inheritance, Polymorphism"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:value="7" />
+
+        <Button
+            android:id="@+id/fields"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Fields, Methods, Parameter Passing"
+            android:textColor="@color/black"
+            android:textSize="13dp"
+            android:value="8" />
+    </LinearLayout>
+
+    <!-- 1 loops, 2 arrays, 3 arraylist -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/loops"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Loops"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize"
+            android:value="1" />
+
+        <Button
+            android:id="@+id/arrayList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="ArrayList"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize"
+            android:value="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/arithmetic"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Arithmetic and Boolean Expressions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize" />
+
+        <Button
+            android:id="@+id/arrays"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Arrays"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize"
+            android:value="2" />
+
+    </LinearLayout>
+
+    <!-- 1 loops, 2 arrays, 3 arraylist -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/searching"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Searching and Sorting Algorithms"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize"
+            android:value="9" />
+
+        <Button
+            android:id="@+id/recursion"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Recursion"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize"
+            android:value="5" />
+
+    </LinearLayout>
+
+    <!-- 4 strings, 5 recursion, 6 algorithms -->
+
+    <!-- 7 classes -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/strings"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Strings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize"
+            android:value="4" />
+
+        <Button
+            android:id="@+id/algorithms"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="start"
+            android:text="Algorithms"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize"
+            android:value="6" />
+    </LinearLayout>
+
+    <!-- 8 fields -->
+
+    <!-- 9 searching -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="33dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/viewAnswers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="answers"
+            android:text="Solutions"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize" />
+
+
+        <Button
+            android:id="@+id/retry"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/bMargin"
+            android:layout_marginRight="@dimen/bMargin"
+            android:layout_weight="1"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:onClick="retry"
+            android:text="Try Again?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/fontSize" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+    </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+</LinearLayout>

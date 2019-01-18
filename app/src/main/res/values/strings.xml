@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">APCSQuiz</string>
+    <string name="title_activity_display_question">DisplayQuestion</string>
+    <string name="title_activity_questions">QuestionsActivity</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fontSize">15dp</dimen>
+    <dimen name="qMargin">10dp</dimen>
+    <dimen name="qPaddingT">40dp</dimen>
+    <dimen name="qPaddingB">0dp</dimen>
+    <dimen name="qPaddingLR">30dp</dimen>
+    <dimen name="cMargin">10dp</dimen>
+    <dimen name="cPadding">10dp</dimen>
+    <dimen name="bMargin">0dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>
